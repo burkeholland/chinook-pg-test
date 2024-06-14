@@ -17,3 +17,7 @@ sql_script=".devcontainer/Chinook_PostgreSql.sql"
 
 # Run the SQL script using psql
 psql -U "$username" -h "$host" -p "$port" -f "$sql_script"
+
+echo "Database setup complete"
+
+echo "Run @pg /conn postgres://postgres:postgres@localhost/chinook in the Chat"

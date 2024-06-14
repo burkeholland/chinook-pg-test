@@ -11,11 +11,12 @@
 	// This can be used to network with other containers or with the host.
 	// "forwardPorts": [3000, 5432],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "./.devcontainer/setup.sh",
+	"postCreateCommand": "chmod +x .devcontainer/db/install.sh",
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"robconery.pg-chat"
+				"robconery.pg-chat",
+				"GitHub.copilot-chat"
 			]
 		}
 	},
